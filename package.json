@@ -1,0 +1,12 @@
+{
+  "name": "conocimientos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repositorio personal de conocimientos en Markdown",
+  "scripts": {
+    "check-links": "node tools/check-links.js --root ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
