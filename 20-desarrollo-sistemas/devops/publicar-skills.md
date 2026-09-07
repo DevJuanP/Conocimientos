@@ -4,12 +4,12 @@ area: desarrollo
 tags: [desarrollo, devops]
 created: 2026-09-07
 updated: 2026-09-07
-related: ["./_index.md", "./comando-ship.md"]
+related: ["./_index.md", "./comando-ship.md", "./licenciar-skills.md"]
 ---
 
 # Publicar skills de agente
 
-Flujo para convertir un `.md` suelto en una skill instalable por cualquiera con un comando. Vale para OpenCode, Claude Code, Cursor, Copilot y cualquier agente que lea el estándar `SKILL.md`.
+Flujo para convertir un `.md` suelto en una skill instalable por cualquiera con un comando. Vale para OpenCode, Claude Code, Cursor, Copilot y cualquier agente que lea el estándar `SKILL.md`. Incluye cómo licenciarla para seguir siendo el autor: detalle en [Licenciar skills de agente](licenciar-skills.md).
 
 ## Formato obligatorio (Agent Skills)
 
@@ -51,7 +51,19 @@ license: MIT
 2. Agrega el frontmatter de arriba.
 3. Reescribe la `description` pensando en el modelo y en el humano que la lee en el listado.
 
-### 2. Subir a GitHub público (esto ya te hace instalable)
+### 2. Licenciar la skill (seguir siendo el autor)
+
+Eres propietario por defecto al crearla; la licencia solo otorga permiso de uso sin ceder propiedad. No se solicita en ningún lado: basta un archivo `LICENSE` en la raíz. Recomendación: MIT (la más usada en skills y npm).
+
+1. Agrega `LICENSE` (MIT) con tu nombre: `Copyright (c) 2026 TU-USUARIO`.
+2. En `SKILL.md`: pon `license: MIT` + `metadata.author` con tu usuario y repo, y un pie `© 2026 TU-USUARIO. Licencia MIT.`.
+3. En `README.md`: autor visible + comando canónico `npx skills add TU-USUARIO/mi-skill`.
+4. Si publicas a npm: campos `author`, `repository` y `license` en `package.json`.
+5. Genera prueba de fecha: commits firmados + primer tag (`gh skill publish --tag v0.1.0`).
+
+Detalle completo y ejemplo de licencia en [Licenciar skills de agente](licenciar-skills.md).
+
+### 3. Subir a GitHub público (esto ya te hace instalable)
 
 No hay registro central obligatorio. Con el repo público basta:
 
@@ -78,13 +90,13 @@ npx skills add https://github.com/TU-USUARIO/mi-repo --skill mi-skill
 npx skills add TU-USUARIO/mi-skill@<tag-o-commit>
 ```
 
-### 3. Aparecer en skills.sh y directorios
+### 4. Aparecer en skills.sh y directorios
 
 * **Automático:** `skills.sh` lista por telemetría de instalaciones. Haz tú la primera instalación para acelerar.
 * **Manual:** `npx skills publish` dentro de la carpeta (pide login con GitHub, valida y sube), o pide indexación en `vercel-labs/skills`.
 * **Long-tail:** los crawlers (SkillsMP, claudeskills.info, `gh skill search`) recogen solos los repos públicos con topic `agent-skill`. Para releases formales: `gh skill publish --tag v0.1.0`.
 
-### 4. Solo si necesitas plugin de OpenCode (opcional)
+### 5. Solo si necesitas plugin de OpenCode (opcional)
 
 Si tu skill es solo instrucciones, no necesitas esto. Solo si llevas hooks, MCP o herramientas:
 
@@ -108,5 +120,6 @@ Si tu skill es solo instrucciones, no necesitas esto. Solo si llevas hooks, MCP 
 
 ## Ver también
 
+* [Licenciar skills de agente](licenciar-skills.md)
 * [DevOps (MOC)](_index.md)
 * [Comando `/ship` de OpenCode - referencia completa](comando-ship.md)
