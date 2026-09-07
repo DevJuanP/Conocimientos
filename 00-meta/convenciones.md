@@ -77,7 +77,7 @@ Ver plantillas en `plantillas/`.
 2. Al procesar, mueve (no copies) a su carpeta final con nombre definitivo.
 3. Agrega frontmatter completo y sección `Ver también`.
 4. Agrega enlace en el `_index.md` correspondiente.
-5. Corre `python tools/check-links.py`.
+5. Corre `npm run check-links`.
 
 ## 7. Qué va en cada área
 

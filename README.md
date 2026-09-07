@@ -24,7 +24,7 @@ Funciona en **Obsidian** (recomendado), **VS Code**, **GitHub** y **MkDocs** sin
    [Ley de Kirchhoff](../circuitos/ley-de-kirchhoff.md)
    ```
    No uses `[[wikilinks]]` salvo en borradores del inbox. Ver [convenciones](00-meta/convenciones.md).
-4. **Verificar:** ejecuta `python tools/check-links.py` para detectar enlaces rotos y frontmatter incompleto.
+4. **Verificar:** ejecuta `npm run check-links` para detectar enlaces rotos y frontmatter incompleto.
 
 ## Convenciones en 30 segundos
 
