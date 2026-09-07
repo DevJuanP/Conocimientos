@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showLineNumber": true,
+  "attachmentFolderPath": "00-meta/adjuntos",
+  "promptDelete": true,
+  "propertiesInDocument": "visible"
+}

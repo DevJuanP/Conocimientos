@@ -1,0 +1,13 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "markdown.preview.breaks": true,
+  "markdown.validate.enabled": true,
+  "cSpell.language": "es",
+  "cSpell.enableFiletypes": ["markdown"],
+  "editor.wordWrap": "on",
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  }
+}

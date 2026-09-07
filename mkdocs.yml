@@ -1,0 +1,29 @@
+site_name: Conocimientos
+site_description: Repositorio personal de conocimientos
+site_author: Juan
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - attr_list
+nav:
+  - Inicio: README.md
+  - Meta: 00-meta/convenciones.md
+  - Instituto: 10-instituto/_index.md
+  - Desarrollo: 20-desarrollo-sistemas/_index.md
+  - Electrónica: 30-electronica/_index.md
+  - Ciencias: 40-ciencias/_index.md
+  - Cursos extras: 90-cursos-extras/_index.md

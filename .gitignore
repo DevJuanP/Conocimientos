@@ -1,0 +1,12 @@
+# Ignorar archivos locales y de herramientas
+.obsidian/workspace*
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.site/
+site/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+__pycache__/
+.venv/
