@@ -1,0 +1,1 @@
+existe archify, sirve para generar diagramas a partir de un repo, con flujos, etc, lo vi en Midu en tiktok 
