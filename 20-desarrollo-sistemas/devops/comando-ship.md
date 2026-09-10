@@ -3,7 +3,7 @@ title: Comando ship de OpenCode - referencia completa
 area: desarrollo
 tags: [desarrollo, devops]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-10
 related: ["./automatizar-git-add-commit-push.md", "./_index.md"]
 ---
 
@@ -147,4 +147,3 @@ Reglas: si el diff mezcla dos temas no relacionados, pregunta antes de dividir e
 
 * [Automatizar git add, commit y push en una acción](automatizar-git-add-commit-push.md)
 * [DevOps (MOC)](_index.md)
-* [Comando /ship de este repo](../../.opencode/commands/ship.md)

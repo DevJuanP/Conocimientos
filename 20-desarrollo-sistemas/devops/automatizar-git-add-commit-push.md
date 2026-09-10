@@ -3,7 +3,7 @@ title: Automatizar git add, commit y push en una acción
 area: desarrollo
 tags: [desarrollo, devops, buenas-practicas]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-10
 related: ["./_index.md"]
 ---
 
@@ -57,8 +57,8 @@ Un slash command de OpenCode que hace todo en una invocación:
 /ship actualiza reglas de enlaces
 ```
 
-En este repo vive en [.opencode/commands/ship.md](../../.opencode/commands/ship.md)
-y sigue este flujo: inspecciona `status`/`diff` → frena si hay secretos o no hay
+Documentado con fuente completa en [Comando `/ship` de OpenCode](comando-ship.md),
+sigue este flujo: inspecciona `status`/`diff` → frena si hay secretos o no hay
 cambios → `git add -A` → genera mensaje Conventional Commits desde el diff real
 → commit → push (con `-u origin` si la rama no tiene upstream).
 
@@ -98,6 +98,6 @@ capa correcta es un slash command, sin servidor que mantener.
 ## Ver también
 
 * [DevOps (MOC)](_index.md)
-* [Comando /ship del repo](../../.opencode/commands/ship.md)
+* [Comando `/ship` de OpenCode](comando-ship.md)
 * [Mapa del repo](../../README.md)
 * [Convenciones](../../00-meta/convenciones.md)
