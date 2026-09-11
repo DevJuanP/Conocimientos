@@ -12,6 +12,7 @@ Funciona en **Obsidian** (recomendado), **VS Code**, **GitHub** y **MkDocs** sin
 | [20-desarrollo-sistemas](20-desarrollo-sistemas/_index.md) | Programación, arquitectura, DevOps, buenas prácticas. |
 | [30-electronica](30-electronica/_index.md) | Componentes, circuitos, proyectos. |
 | [40-ciencias](40-ciencias/_index.md) | Evolución y otras ciencias. |
+| [80-dreams](80-dreams/_index.md) | Proyectos grandes a futuro, ideas de portafolio. |
 | [90-cursos-extras](90-cursos-extras/_index.md) | Cursos fuera del instituto. |
 | [99-inbox](99-inbox/README.md) | Bandeja de entrada. Todo lo nuevo entra aquí. |
 

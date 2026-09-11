@@ -70,7 +70,7 @@ function main() {
     const rel = path.relative(root, file);
     const relPosix = rel.split(path.sep).join('/');
     const parts = rel.split(path.sep);
-    const text = fs.readFileSync(file, 'utf8');
+    const text = fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n'); // normaliza CRLF (Windows)
     const base = path.basename(file);
 
     // 1. Frontmatter (salvo README, _index e inbox sin procesar)
