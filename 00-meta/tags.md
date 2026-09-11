@@ -3,7 +3,7 @@ title: Tags controlados
 area: meta
 tags: [meta]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-11
 related: ["./convenciones.md"]
 ---
 
@@ -23,7 +23,8 @@ Formato: `area` o `area/subtema`. En el frontmatter van sin `#`.
 
 ## desarrollo
 `desarrollo`, `programacion/python`, `programacion/javascript`, `programacion/java`,
-`arquitectura`, `devops`, `testing`, `buenas-practicas`, `analisis-requerimientos`
+`arquitectura`, `devops`, `testing`, `buenas-practicas`, `analisis-requerimientos`,
+`desarrollo/ia`
 
 ## electronica
 `electronica`, `electronica/fundamentos`, `electronica/componentes`,

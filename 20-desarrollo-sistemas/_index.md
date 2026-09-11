@@ -7,6 +7,7 @@ Conocimiento duradero de software. Los apuntes del instituto están en [10-insti
 * [Lenguajes](lenguajes/_index.md)
 * [Arquitectura](arquitectura/_index.md)
 * [DevOps](devops/_index.md)
+* [IA](ia/_index.md)
 * [Buenas prácticas](buenas-practicas/_index.md)
 
 ## Notas generales
