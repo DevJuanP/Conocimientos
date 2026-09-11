@@ -13,6 +13,7 @@ Conocimiento duradero de software. Los apuntes del instituto están en [10-insti
 ## Notas generales
 
 * [Análisis y requerimientos](analisis-y-requerimientos.md)
+* [Plantillas de proyecto](plantillas-proyecto/_index.md)
 
 ## Ver también
 
