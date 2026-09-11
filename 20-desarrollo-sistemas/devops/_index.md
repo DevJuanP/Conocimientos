@@ -5,6 +5,7 @@
 * [DevOps - qué es y en qué aterriza](devops.md)
 * [Automatizar git add, commit y push en una acción](automatizar-git-add-commit-push.md)
 * [Comando `/ship` de OpenCode - referencia completa](comando-ship.md)
+* [Comando `goto` - saltos rápidos entre rutas favoritas](comando-goto.md)
 * [Publicar skills de agente](publicar-skills.md)
 * [Licenciar skills de agente](licenciar-skills.md)
 
