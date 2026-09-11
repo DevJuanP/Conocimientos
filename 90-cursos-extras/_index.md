@@ -4,7 +4,7 @@ Cursos fuera del instituto. Misma lógica que `10-instituto/` pero con `area: cu
 
 ## Cursos
 
-* _(vacío — crea una subcarpeta por plataforma o tema)_
+* [Python](python/_index.md)
 
 ## Ver también
 
