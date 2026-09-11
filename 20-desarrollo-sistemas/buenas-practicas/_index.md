@@ -2,7 +2,7 @@
 
 ## Notas
 
-* _(vacío)_
+* [Refero Styles y DESIGN.md](refero-styles-design-md.md)
 
 ## Ver también
 
