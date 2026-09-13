@@ -12,3 +12,4 @@
 ## Ver también
 
 * [Desarrollo de sistemas](../_index.md)
+* [LSP en OpenCode](../herramientas/lsp/lsp-en-opencode.md)

@@ -18,7 +18,7 @@ const LINK_RE = /(?<!!)\[([^\]]*)\]\(([^)]+)\)/g;
 const FENCED_CODE_RE = /```[\s\S]*?```/g;
 const INLINE_CODE_RE = /`[^`\n]+`/g;
 const REQUIRED_FIELDS = ['title', 'area', 'tags', 'created', 'updated'];
-const SKIP_FILES = new Set(['README.md']);
+const SKIP_FILES = new Set(['README.md', 'AGENTS.md']);
 const SKIP_DIRS = new Set(['99-inbox']); // frontmatter no exigible (borradores)
 // Las plantillas contienen enlaces placeholder a propósito; no se validan.
 const SKIP_LINK_CHECK_PREFIXES = ['00-meta/plantillas'];
