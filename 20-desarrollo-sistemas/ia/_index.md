@@ -6,6 +6,7 @@ APIs y modelos de IA con capa gratuita, runtimes locales y herramientas para age
 
 * [Itsfree.ai - APIs de IA gratis](itsfree-ai-apis-gratis.md)
 * [v0 de Vercel - guia de uso](v0-vercel.md)
+* [OpenCode - AGENTS.md vs skill vs agent vs MCP vs command](opencode-agents-skills-mcp-commands.md)
 
 ## Ver también
 
