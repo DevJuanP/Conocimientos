@@ -4,6 +4,7 @@
 
 * [Archify - diagramas desde repo](archify-diagramas-desde-repo.md)
 * [Computación distribuida, microservicios y SOA](computacion-distribuida-microservicios-soa.md)
+* [RabbitMQ vs Kafka](rabbitmq-vs-kafka.md)
 * [SDK vs API REST en pasarelas de pago](sdk-vs-api-rest-pasarelas-pago.md)
 
 ## Ver también
