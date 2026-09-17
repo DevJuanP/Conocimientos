@@ -3,8 +3,8 @@ title: Arquitecturas Distribuidas - Computación Distribuida, Microservicios y S
 area: desarrollo
 tags: [desarrollo, arquitectura]
 created: 2026-09-10
-updated: 2026-09-13
-related: []
+updated: 2026-09-17
+related: ["./rabbitmq-vs-kafka.md"]
 ---
 
 # Arquitecturas Distribuidas: Computación Distribuida, Microservicios y SOA
@@ -132,5 +132,7 @@ Para abrir un socket necesitas la IP + puerto del otro. Formas típicas de conse
 
 ## Ver también
 
-* [Arquitectura](_index.md)
-* [Desarrollo de sistemas](../_index.md)
+* [RabbitMQ vs Kafka](rabbitmq-vs-kafka.md)
+* [Sistemas distribuidos](_index.md)
+* [Arquitectura](../_index.md)
+* [Desarrollo de sistemas](../../_index.md)

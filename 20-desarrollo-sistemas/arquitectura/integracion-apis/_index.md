@@ -1,0 +1,14 @@
+# Integración de APIs (MOC)
+
+Cómo se comunican los servicios entre sí: clientes HTTP, SDKs y consumo de APIs externas como pasarelas de pago.
+
+## Notas
+
+* [FeignClient vs RestTemplate](feign-client-vs-resttemplate.md)
+* [SDK vs API REST en pasarelas de pago](sdk-vs-api-rest-pasarelas-pago.md)
+
+## Ver también
+
+* [Sistemas distribuidos](../sistemas-distribuidos/_index.md)
+* [Arquitectura](../_index.md)
+* [Desarrollo de sistemas](../../_index.md)

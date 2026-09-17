@@ -3,7 +3,7 @@ title: RabbitMQ vs Kafka
 area: desarrollo
 tags: [desarrollo, arquitectura]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-17
 related: ["./computacion-distribuida-microservicios-soa.md"]
 ---
 
@@ -49,5 +49,6 @@ Regla de oro: ¿necesitas que alguien **haga algo**? RabbitMQ. ¿Necesitas que t
 ## Ver también
 
 * [Computación distribuida, microservicios y SOA](computacion-distribuida-microservicios-soa.md)
-* [Arquitectura](_index.md)
-* [Desarrollo de sistemas](../_index.md)
+* [Sistemas distribuidos](_index.md)
+* [Arquitectura](../_index.md)
+* [Desarrollo de sistemas](../../_index.md)

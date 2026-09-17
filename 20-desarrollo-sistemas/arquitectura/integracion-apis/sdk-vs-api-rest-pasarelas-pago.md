@@ -3,8 +3,8 @@ title: SDK vs API REST en pasarelas de pago
 area: desarrollo
 tags: [desarrollo, arquitectura]
 created: 2026-09-13
-updated: 2026-09-13
-related: ["./computacion-distribuida-microservicios-soa.md"]
+updated: 2026-09-17
+related: ["../sistemas-distribuidos/computacion-distribuida-microservicios-soa.md"]
 ---
 
 # SDK vs API REST en pasarelas de pago
@@ -71,4 +71,7 @@ Otros ejemplos: AWS SDK, Firebase SDK, Android SDK (cámara, GPS). En pasarelas 
 
 ## Ver también
 
-* [Computación distribuida, microservicios y SOA](./computacion-distribuida-microservicios-soa.md)
+* [Computación distribuida, microservicios y SOA](../sistemas-distribuidos/computacion-distribuida-microservicios-soa.md)
+* [Integración de APIs](_index.md)
+* [Arquitectura](../_index.md)
+* [Desarrollo de sistemas](../../_index.md)

@@ -4,7 +4,7 @@ area: desarrollo
 tags: [desarrollo, arquitectura, devops]
 created: 2026-09-17
 updated: 2026-09-17
-related: ["./concurrencia-vs-paralelismo.md"]
+related: ["./concurrencia-vs-paralelismo.md", "./hilos-de-ejecucion-en-profundidad.md"]
 ---
 
 # Como una app real atiende multiples clientes
@@ -84,5 +84,7 @@ Cada nivel aporta su concurrencia o paralelismo: el balanceador reparte, Node in
 ## Ver también
 
 * [Concurrencia vs paralelismo en programacion](concurrencia-vs-paralelismo.md)
-* [Arquitectura](_index.md)
-* [Desarrollo de sistemas](../_index.md)
+* [Hilos de ejecucion en profundidad](hilos-de-ejecucion-en-profundidad.md)
+* [Concurrencia y paralelismo](_index.md)
+* [Arquitectura](../_index.md)
+* [Desarrollo de sistemas](../../_index.md)
