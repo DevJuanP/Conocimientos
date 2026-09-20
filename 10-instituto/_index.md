@@ -19,5 +19,5 @@ Cursos del instituto organizados por **tema**. El ciclo va en el frontmatter (`c
 ## Ver también
 
 * [Desarrollo de sistemas](../20-desarrollo-sistemas/_index.md)
-* [Análisis y requerimientos general](../20-desarrollo-sistemas/analisis-y-requerimientos.md)
+* [Análisis y requerimientos general](../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md)
 * [Convenciones](../00-meta/convenciones.md)

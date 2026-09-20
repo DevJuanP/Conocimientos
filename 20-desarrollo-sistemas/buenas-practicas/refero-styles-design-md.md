@@ -156,4 +156,4 @@ Limites: styles cubren sobre todo marketing web (landing, pricing, editorial, Sa
 ## Ver también
 
 * [Desarrollo de sistemas](../_index.md)
-* [Análisis y requerimientos](../analisis-y-requerimientos.md)
+* [Análisis y requerimientos](../analisis-y-requerimientos/_index.md)

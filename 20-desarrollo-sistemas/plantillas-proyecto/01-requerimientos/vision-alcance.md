@@ -35,4 +35,4 @@ Define qué problema resuelve el proyecto, para quién y qué queda fuera. Evita
 
 * [Requerimientos funcionales](./requerimientos-funcionales.md)
 * [Requerimientos no funcionales](./requerimientos-no-funcionales.md)
-* [Análisis y requerimientos](../../analisis-y-requerimientos.md)
+* [Análisis y requerimientos](../../analisis-y-requerimientos/_index.md)

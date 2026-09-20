@@ -11,9 +11,10 @@ Conocimiento duradero de software. Los apuntes del instituto están en [10-insti
 * [Buenas prácticas](buenas-practicas/_index.md)
 * [Herramientas](herramientas/_index.md)
 
-## Notas generales
+## Temas transversales
 
-* [Análisis y requerimientos](analisis-y-requerimientos.md)
+* [Análisis y requerimientos](analisis-y-requerimientos/_index.md)
+* [Archivos y almacenamiento](archivos-y-almacenamiento/_index.md)
 * [Plantillas de proyecto](plantillas-proyecto/_index.md)
 
 ## Ver también

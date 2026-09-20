@@ -1,6 +1,6 @@
 # Análisis y requerimientos - Instituto (MOC)
 
-Apuntes del curso. El conocimiento duradero vive en [Análisis y requerimientos general](../../20-desarrollo-sistemas/analisis-y-requerimientos.md).
+Apuntes del curso. El conocimiento duradero vive en [Análisis y requerimientos general](../../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md).
 
 ## Notas
 
@@ -8,4 +8,4 @@ Apuntes del curso. El conocimiento duradero vive en [Análisis y requerimientos 
 
 ## Ver también
 
-* [Análisis y requerimientos general](../../20-desarrollo-sistemas/analisis-y-requerimientos.md)
+* [Análisis y requerimientos general](../../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md)

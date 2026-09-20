@@ -4,12 +4,12 @@ area: desarrollo
 tags: [desarrollo, arquitectura, estado/completo]
 created: 2026-09-08
 updated: 2026-09-09
-related: ["../20-desarrollo-sistemas/arquitectura/archify-diagramas-desde-repo.md"]
+related: ["../20-desarrollo-sistemas/arquitectura/diagramas/archify-diagramas-desde-repo.md"]
 ---
 
 # Nota 001 - Archify
 
-> Estado: **procesada** ✅ — ver nota final en [Archify - diagramas desde repo](../20-desarrollo-sistemas/arquitectura/archify-diagramas-desde-repo.md).
+> Estado: **procesada** ✅ — ver nota final en [Archify - diagramas desde repo](../20-desarrollo-sistemas/arquitectura/diagramas/archify-diagramas-desde-repo.md).
 
 ## Nota original
 
@@ -17,4 +17,4 @@ Existe Archify, sirve para generar diagramas a partir de un repo, con flujos, et
 
 ## Ver también
 
-* [Archify - diagramas desde repo](../20-desarrollo-sistemas/arquitectura/archify-diagramas-desde-repo.md)
+* [Archify - diagramas desde repo](../20-desarrollo-sistemas/arquitectura/diagramas/archify-diagramas-desde-repo.md)

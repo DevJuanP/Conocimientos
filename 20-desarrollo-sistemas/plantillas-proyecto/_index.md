@@ -24,11 +24,7 @@ Kit de documentos para iniciar un proyecto sin olvidar nada. Copia y completa en
 * [Criterios de aceptación](04-calidad/criterios-aceptacion.md)
 * [Plan de pruebas](04-calidad/plan-pruebas.md)
 
-## Proyectos
-
-* [Grupos](grupos/_index.md)
-
 ## Ver también
 
-* [Análisis y requerimientos](../analisis-y-requerimientos.md)
+* [Análisis y requerimientos](../analisis-y-requerimientos/_index.md)
 * [Desarrollo de sistemas](../_index.md)

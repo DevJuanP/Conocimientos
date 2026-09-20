@@ -5,12 +5,12 @@ ciclo: 2026-I
 tags: [instituto, instituto/analisis-requerimientos, estado/completo]
 created: 2026-09-07
 updated: 2026-09-07
-related: ["../../20-desarrollo-sistemas/analisis-y-requerimientos.md"]
+related: ["../../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md"]
 ---
 
 # Requerimientos funcionales vs no funcionales
 
-Apunte de clase. Conocimiento duradero en [Análisis y requerimientos](../../20-desarrollo-sistemas/analisis-y-requerimientos.md).
+Apunte de clase. Conocimiento duradero en [Análisis y requerimientos](../../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md).
 
 ## Funcionales
 
@@ -30,4 +30,4 @@ Pregúntate: ¿describe *qué hace* (funcional) o *cómo de bien lo hace* (no fu
 
 ## Ver también
 
-* [Análisis y requerimientos](../../20-desarrollo-sistemas/analisis-y-requerimientos.md)
+* [Análisis y requerimientos](../../20-desarrollo-sistemas/analisis-y-requerimientos/_index.md)

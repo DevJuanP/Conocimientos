@@ -4,12 +4,12 @@ area: desarrollo
 tags: [desarrollo, analisis-requerimientos]
 created: 2026-09-07
 updated: 2026-09-07
-related: ["../10-instituto/analisis-y-requerimientos/requerimientos-funcionales-vs-no-funcionales.md"]
+related: ["../../10-instituto/analisis-y-requerimientos/requerimientos-funcionales-vs-no-funcionales.md"]
 ---
 
 # Análisis y requerimientos
 
-Nota duradera. Los apuntes del curso viven en [instituto](../10-instituto/analisis-y-requerimientos/_index.md).
+Nota duradera. Los apuntes del curso viven en [instituto](../../10-instituto/analisis-y-requerimientos/_index.md).
 
 ## Definición
 
@@ -28,4 +28,4 @@ Proceso de descubrir, especificar y validar qué debe hacer un sistema y bajo qu
 
 ## Ver también
 
-* [Requerimientos funcionales vs no funcionales (instituto)](../10-instituto/analisis-y-requerimientos/requerimientos-funcionales-vs-no-funcionales.md)
+* [Requerimientos funcionales vs no funcionales (instituto)](../../10-instituto/analisis-y-requerimientos/requerimientos-funcionales-vs-no-funcionales.md)
