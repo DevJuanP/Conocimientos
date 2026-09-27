@@ -3,13 +3,15 @@ title: Convenciones
 area: meta
 tags: [meta, meta/convencion]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-19
 related: ["./tags.md", "./glosario.md"]
 ---
 
 # Convenciones
 
 Reglas del repo. Si dudas, este archivo manda.
+
+> **Nota**: Este archivo es la fuente de verdad. `AGENTS.md` solo fija comportamiento por defecto del agente; las reglas aquí mandan.
 
 ## 1. Nombres de archivos y carpetas
 
@@ -79,7 +81,24 @@ Ver plantillas en `plantillas/`.
 4. Agrega enlace en el `_index.md` correspondiente.
 5. Corre `npm run check-links`.
 
-## 7. Qué va en cada área
+## 7. Al guardar conocimiento (permiso permanente)
+
+Cuando el usuario pida guardar algo ("agrega/guarda esto en conocimientos"):
+
+1. Lee `00-meta/convenciones.md` y `00-meta/tags.md` antes de escribir.
+2. Decide la mejor ubicación **sin preguntar**: conocimiento duradero va a su carpeta (`20-...`, `30-...`, etc.), borrador rápido a `99-inbox/`.
+3. Analiza si conviene fragmentar: si hay dos temas distintos, o un tema tan extenso que se puede separar en dos o tres archivos, hazlo. Muestra la propuesta ("Mira, tengo 2 (o 3) archivos .md: ...") con título y ruta propuesta para cada uno, y pregunta: "¿Quieres que suba los archivos por separado o quieres subir todo como un solo archivo .md a tus conocimientos?". Solo genera el contenido final después de su respuesta.
+4. Tienes permiso permanente para crear carpetas en raíz y todas las subcarpetas necesarias. Crea estructura solo si aporta orden (ej. separar concepto general de uso concreto en una herramienta); no sobre-fragmentes ni reorganices lo existente sin que te lo pidan.
+5. Formato: `kebab-case` sin tildes, frontmatter completo (`title`, `area`, `tags`, `created`, `updated`, `related`), enlaces Markdown relativos (nunca `[[wikilinks]]` ni rutas absolutas en notas finales), tags solo de `tags.md` (máx. 5), sección `## Ver también` al final.
+6. Enlaza cada nota nueva en el `_index.md` (MOC) de su carpeta. Sin ese enlace es invisible.
+7. Valida con `npm run check-links` y reporta el resultado al usuario.
+
+## 8. Al editar notas
+
+Actualiza `updated` (fecha de hoy) solo si cambia contenido real, no por typos.
+No inventes tags: si hace falta uno nuevo, proponlo primero en `00-meta/tags.md`.
+
+## 9. Qué va en cada área
 
 * `10-instituto/`: apuntes, tareas y exámenes por materia. Si un tema sirve fuera del instituto, crea nota general en `20/30/40` y enlázala desde el apunte.
 * `20-desarrollo-sistemas/`: conocimiento duradero de software.

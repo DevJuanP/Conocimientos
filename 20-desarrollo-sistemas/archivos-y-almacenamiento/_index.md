@@ -16,6 +16,7 @@ Fundamentos de sistemas de archivos, streams, serialización y persistencia sin 
 * [Archivos, Permisos y Metadatos](archivos-permisos-metadatos.md)
 * [Streams: Qué son y Ventajas](streams-ventajas.md)
 * [Archivos, Streams y Serialización](archivos-streams-serializacion.md)
+* [Serialización y Deserialización con Ejemplos](serializacion-y-deserializacion-ejemplos.md)
 * [Recuperación de Estado sin Base de Datos](recuperacion-estado-sin-bd.md)
 
 ## Ver también

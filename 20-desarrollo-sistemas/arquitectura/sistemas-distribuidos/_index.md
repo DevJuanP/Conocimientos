@@ -6,6 +6,7 @@ Diseño de software repartido en varios nodos: computación distribuida, microse
 
 * [Arquitecturas Distribuidas: Computación Distribuida, Microservicios y SOA](computacion-distribuida-microservicios-soa.md)
 * [RabbitMQ vs Kafka](rabbitmq-vs-kafka.md)
+* [Ciclo de vida de un JWT en microservicios](ciclo-vida-jwt-microservicios.md)
 
 ## Ver también
 
