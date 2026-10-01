@@ -5,6 +5,7 @@ Herramientas del entorno de desarrollo: editores, protocolos y agentes de códig
 ## Notas
 
 * [LSP](lsp/_index.md)
+* [Migrar OpenCode 1.x a 2.x](migrar-opencode-1x-a-2x.md)
 
 ## Ver también
 
