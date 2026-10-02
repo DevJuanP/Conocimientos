@@ -9,6 +9,7 @@ APIs y modelos de IA con capa gratuita, runtimes locales y herramientas para age
 * [OpenCode - AGENTS.md vs skill vs agent vs MCP vs command](opencode-agents-skills-mcp-commands.md)
 * [OpenCode Zen free - limites](opencode-zen-modelos-free-limites.md)
 * [OpenCode Go suscripcion 10 USD vs Zen saldo](opencode-go-suscripcion-10-usd.md)
+* [OpenCode - Skill design-extractor (guia de diseño desde URL)](opencode-skill-design-extractor.md)
 
 ## Ver también
 
