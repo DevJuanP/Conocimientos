@@ -14,6 +14,7 @@ Conocimiento sobre análisis de requerimientos, especificación y documentación
 ## Notas
 
 * [Análisis y requerimientos](analisis-y-requerimientos.md)
+* [Línea base de especificación](linea-base-de-especificacion.md) — Qué documentar y aprobar antes de construir
 
 ## Ver también
 
