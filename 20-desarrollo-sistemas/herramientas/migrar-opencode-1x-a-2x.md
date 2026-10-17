@@ -3,7 +3,7 @@ title: Migrar OpenCode 1.x a 2.x
 area: desarrollo
 tags: [desarrollo, devops, desarrollo/ia]
 created: 2026-10-01
-updated: 2026-10-02
+updated: 2026-10-16
 related: ["../devops/_index.md", "../ia/_index.md"]
 ---
 
@@ -104,7 +104,17 @@ opencode
 /connect
 ```
 
-## 8. Rollback a 1.x
+## 8. Configuracion de terminal V2 (cli.json)
+
+En V2 la configuracion del cliente de terminal deja los `tui.json(c)` en capas y pasa a un unico archivo global:
+
+```text
+~/.config/opencode/cli.json
+```
+
+Se migra sola (settings y preferencias globales de `tui.json`) en el primer arranque del cliente V2; no hay config de cliente por proyecto. Subcomandos utiles del binario V2: `opencode service status|restart`, `opencode api get /api/info`, `opencode session`, `opencode reload`.
+
+## 9. Rollback a 1.x
 
 Con opencode cerrado (detalle completo en `RESTORE.md` dentro del backup):
 

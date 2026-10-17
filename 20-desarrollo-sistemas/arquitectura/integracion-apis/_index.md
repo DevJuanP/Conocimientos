@@ -9,6 +9,7 @@ Cómo se comunican los servicios entre sí: clientes HTTP, SDKs y consumo de API
 * [Anatomía de un JSON Web Token - Header, Payload y Firma](json-web-token-anatomia-claims.md)
 * [JWT vs OAuth2 y uso moderno - Ventajas, riesgos y buenas prácticas](jwt-oauth2-uso-moderno-seguridad.md)
 * [SOAP vs REST - Tipos de servicios web](soap-vs-rest.md)
+* [Contratos entre fronteras](contratos-entre-fronteras.md) — Contratos API, eventos, errores y diseño
 
 ## Ver también
 
