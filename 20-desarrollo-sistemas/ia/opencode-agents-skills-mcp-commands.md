@@ -3,13 +3,13 @@ title: OpenCode - AGENTS.md vs skill vs agent vs MCP vs command
 area: desarrollo
 tags: [desarrollo, desarrollo/ia, buenas-practicas]
 created: 2026-09-15
-updated: 2026-09-15
-related: ["_index.md"]
+updated: 2026-10-16
+related: ["./_index.md", "./opencode-orquestacion-agentes.md"]
 ---
 
 # OpenCode - AGENTS.md vs skill vs agent vs MCP vs command
 
-Guia de criterio para elegir donde poner una instruccion o capacidad repetitiva en OpenCode: contexto siempre activo, conocimiento bajo demanda, persona con permisos, herramienta externa o atajo manual.
+Guia de criterio para elegir donde poner una instruccion o capacidad repetitiva en OpenCode: contexto siempre activo, conocimiento bajo demanda, persona con permisos, herramienta externa o atajo manual. Campos y rutas verificados contra OpenCode 2.x.
 
 ## Capas
 
@@ -39,21 +39,23 @@ Usar para flujo repetitivo pero no omnipresente, multi-paso o con conocimiento d
 
 Caracteristicas:
 
-* Vive en `.opencode/skills/<nombre>/SKILL.md` (proyecto) o `~/.config/opencode/skills/<nombre>/SKILL.md` (global).
-* Frontmatter obligatorio: `name` y `description`. El `name` debe coincidir con la carpeta, en minusculas con guiones.
-* El agente solo ve `name + description` y la carga con `skill({name: "..."})`.
+* Vive en `.opencode/skills/<skill-id>/SKILL.md` (proyecto) o `~/.config/opencode/skills/<skill-id>/SKILL.md` (global). V2 tambien descubre `.opencode/skill/`.
+* Frontmatter recomendado: `name` (etiqueta de display) y `description`. El ID se deriva de la ruta (kebab-case), no del `name`.
+* El agente ve `id + name + description` y la carga con el tool `skill` usando el ID exacto (`{"id": "..."}`). Tambien se puede invocar mencionandola como `@skill-id`.
 * Ahorra contexto frente a AGENTS.md, pero exige una buena `description` para que el agente la elija bien.
-* Se controla por permisos: `allow`, `ask`, `deny` con patrones tipo `internal-*`.
+* Se controla por permisos: accion `skill`, recurso = ID, efecto `allow`/`ask`/`deny` con patrones tipo `internal-*`.
+* Rutas y URLs extra se declaran en un unico array `skills` en config (V2 unifica `skills.paths` + `skills.urls`).
 
 ### Agente
 
-Usar cuando necesitas distinto rol, distinto modelo o distintos limites: reviewer solo lectura (`edit: deny, bash: deny`), planificador sin edicion, explorador para busquedas paralelas sin ensuciar el contexto principal.
+Usar cuando necesitas distinto rol, distinto modelo o distintos limites: reviewer solo lectura (permiso `edit` denegado), planificador sin edicion, explorador para busquedas paralelas sin ensuciar el contexto principal.
 
 Caracteristicas:
 
-* Se define en `.opencode/agents/<nombre>.md` o en `opencode.json`.
-* Campos tipicos: `description`, `mode` (`primary`, `subagent`, `all`), `model`, `permission`, `system`.
-* Los built-in son `build`, `plan` (primarios) y `general`, `explore` (subagentes).
+* Se define en `.opencode/agents/<nombre>.md` o bajo `agents` en `opencode.jsonc`.
+* Campos tipicos en V2: `description`, `mode` (`primary`, `subagent`, `all`), `model` (`provider/model#variant`), `system`, `permissions`, `steps`, `hidden`, `color`, `disabled`, `request`.
+* Los built-in son `build`, `plan` (primarios) y `general`, `explore` (subagentes). Ademas hay agentes ocultos de mantenimiento (`compaction`, `title`, `summary`) que no se seleccionan a mano.
+* Un `subagent` corre en sesion hija con contexto limpio, en primer plano o background; el permiso `subagent` del padre decide que agentes puede lanzar.
 * Reutiliza skills y MCP existentes, solo cambia quien puede usarlos.
 
 ### MCP
@@ -62,9 +64,10 @@ Usar solo cuando el LLM necesita hacer algo imposible con herramientas nativas: 
 
 Caracteristicas:
 
-* Se declara en `opencode.json` bajo `mcp` como `local` (command) o `remote` (url).
+* Se declara en `opencode.jsonc` bajo `mcp.servers` como `local` (command) o `remote` (url).
+* En V2 la clave `enabled` pasa a `disabled` (inverso) y `timeout` es un objeto con `catalog` y `execution`.
 * Cada servidor suma definiciones de tools al contexto. Con muchos MCP se agota el contexto rapido.
-* Recomendacion: desactivar globalmente y activar por agente (`"mymcp_*": false` global, `true` solo en el agente que lo necesita).
+* Recomendacion: desactivar globalmente (`disabled: true`) y activar solo en el agente que lo necesita.
 
 ### Command
 
@@ -75,7 +78,7 @@ Caracteristicas:
 * Vive en `.opencode/commands/<nombre>.md`. El nombre del archivo es el comando.
 * Frontmatter: `description`, `agent`, `model`, `subtask`. El contenido es el `template` del prompt.
 * Soporta `$ARGUMENTS` / `$1 $2`, salida de shell con `` !`comando` `` y archivos con `@ruta`.
-* Con `subtask: true` corre como subagente y no ensucia tu contexto.
+* Con `subagent: true` corre en una sesion hija en background y no ensucia tu contexto (`subtask` es alias deprecado en V2).
 * Puede invocar una skill en su template (ej: `usa la skill git-release`).
 
 ## Arbol de decision

@@ -66,6 +66,10 @@ Cada tarea debe poder responderse en dos direcciones: qué requisito la origina 
 
 La construcción arranca solo si: la línea base está aprobada, el DoR se cumple por tarea y existe evidencia definida de cierre. Si durante la ejecución aparece un requisito no previsto, no se improvisa: se trata como cambio contra la especificación y se reabre la línea base afectada.
 
+## Materialización en OpenCode V2
+
+El contrato de tarea no es solo un documento: en OpenCode V2 se lleva a la práctica con agentes (`.opencode/agents/<nombre>.md` o la clave `agents`) y comandos con `subagent: true`. Cada delegación abre una sesión hija con contexto limpio donde el hijo recibe entrada, reglas y criterios de aceptación, y devuelve la evidencia; el permiso `subagent` del orquestador limita qué agentes puede lanzar. Ver [OpenCode - Orquestación de agentes e IA](./opencode-orquestacion-agentes.md).
+
 ## Relación con la planificación del vault
 
 Los documentos de planificación ya existen como plantillas en [Plantillas de proyecto](../plantillas-proyecto/_index.md):
