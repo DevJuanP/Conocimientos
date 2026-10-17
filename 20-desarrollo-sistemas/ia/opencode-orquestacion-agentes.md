@@ -3,7 +3,7 @@ title: Guía de Orquestación de Agentes e IA con OpenCode
 area: desarrollo
 tags: [desarrollo, desarrollo/ia, arquitectura]
 created: 2026-10-05
-updated: 2026-10-16
+updated: 2026-10-17
 related: ["./opencode-agents-skills-mcp-commands.md", "./contrato-de-ejecucion-para-agentes.md", "./_index.md"]
 ---
 
@@ -24,7 +24,7 @@ Cuando un usuario interactúa manualmente con OpenCode lo hace mediante la inter
 
 ## Método A: ejecución directa mediante CLI (modo headless)
 
-`opencode run` envía un prompt sin abrir la TUI. En V2 es no interactivo por diseño: ya **no** existen los flags `--prompt` ni `--non-interactive`, y el mensaje va como argumento posicional.
+`opencode run` envía un prompt sin abrir la TUI. En V2 es no interactivo por diseño: el mensaje va como **argumento posicional**. El flag `--prompt` sigue existiendo para pre-rellenar prompts en la TUI, y `--auto` permite auto-aprobar permisos en modo desatendido (no existe `--non-interactive`).
 
 Comando de ejemplo que ejecuta la IA orquestadora:
 
@@ -60,7 +60,7 @@ En configuraciones avanzadas, los subagentes no se abren mediante comandos de te
 
 ### 1. Definición de subagentes
 
-Ubicación preferida para un archivo por agente: `.opencode/agents/<nombre>.md` (con frontmatter y el cuerpo como system prompt). También puede declararse en JSON:
+Ubicación preferida para un archivo por agente: `.opencode/agents/<nombre>.md` y `~/.config/opencode/agents/<nombre>.md`. El **cuerpo del documento Markdown** sirve como system prompt del agente; no uses un campo `system` en el frontmatter (eso solo aplica a JSON). También puede declararse en JSON:
 
 ```jsonc
 {
@@ -113,7 +113,7 @@ Los subagentes corren en primer plano o en background y siempre con contexto pro
 
 ### 3. Delegación en background mediante comandos
 
-Un command con `subagent: true` corre en una sesión hija en **background**: el padre queda disponible y recibe el resultado del hijo al terminar. Reemplaza al viejo `subtask` en V2 (que queda como alias deprecado; si ambos aparecen, gana `subagent`).
+Puedes delegar trabajo a un subagente definiendo un command con `agent` y `mode: subagent`. El subagente corre en una **sesión hija con contexto propio**; el padre permanece disponible y recibe el resultado del hijo al terminar. Consulta `opencode agent create --help` para las opciones disponibles; el comportamiento exacto de delegation en commands puede variar entre versiones de V2.
 
 ```md title=".opencode/commands/audit.md"
 ---
@@ -127,7 +127,7 @@ Audita $ARGUMENTS y reporta los riesgos por severidad.
 
 ## Orquestación vía API / SDK
 
-Para orquestar fuera del CLI, V2 expone un HTTP API rediseñado (cambio incompatible respecto de V1). Usa `opencode api` para peticiones locales, o `@opencode/client` / el SDK de V2 para integraciones programáticas.
+Para orquestar fuera del CLI, V2 expone un HTTP API rediseñado (cambio incompatible respecto de V1). Levanta un servidor con `opencode serve` y consume la API con `@opencode-ai/client` (el SDK oficial de V2) para integraciones programáticas.
 
 ## Replicación manual por un desarrollador
 
