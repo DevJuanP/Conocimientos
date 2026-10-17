@@ -3,7 +3,7 @@ title: OpenCode - Skill design-extractor (guia de diseño desde URL)
 area: desarrollo
 tags: [desarrollo, desarrollo/ia, buenas-practicas]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 related: ["./opencode-agents-skills-mcp-commands.md", "../buenas-practicas/refero-styles-design-md.md"]
 ---
 
@@ -56,6 +56,8 @@ Visita como minimo (omitir con justificacion si da 404):
 
 Registra URL visitada + estado. Si una ruta falla, prueba 1 alternativa y sigue.
 
+Modo paralelo (opt-in, solo Completo/webfetch sin MCP browser): por defecto secuencial. Usa subagentes solo si hay 4+ paginas por visitar. Fan-out por paginas, nunca por componentes (separar botones vs formularios duplica descargas y genera HEX inconsistentes). Ej: A: `/ + /pricing`, B: `/login + /signup`, C: `/blog|/docs|/about + /contact`. Max 3 subagentes. Cada subagente devuelve evidencia cruda (URL, estado, HEX + selector, font-family, clases) y no escribe `.md`.
+
 ## 4. Extraccion (que mirar en cada pagina)
 
 - **Paleta:** primarios, secundarios, acento, fondo, texto, estados (hover/disabled/error). Siempre en HEX (`#RRGGBB`). Si es Simple, estima desde lo visible y marca `~aprox`.
@@ -71,6 +73,8 @@ Registra URL visitada + estado. Si una ruta falla, prueba 1 alternativa y sigue.
 En modo Completo o con MCP, respalda cada color con selector CSS o estilo computado citado.
 
 ## 5. Generar design_[dominio].md
+
+Merge centralizado con un solo escritor: si hubo fan-out, el agente principal deduplica primero (misma HEX con distinto nombre -> elige 1 y cita paginas) y despues genera el archivo. El auditor de estilos sin extraer va al final y en secuencial, comparando clases CSS recolectadas vs tokens.
 
 Usa exactamente esta plantilla, sin inventar secciones nuevas salvo `Notas`:
 
@@ -123,12 +127,15 @@ Si un dato no se pudo verificar, escribe `No verificado en [pagina]` en vez de i
 - No inventes HEX: sin evidencia escribe `No verificado`.
 - Cita de que pagina salio cada patron (`/login`, `/pricing`).
 - Archivo final: solo el `design_[dominio].md`, nada mas.
+- Paralelo solo por paginas, prohibido por componentes.
+- Con MCP browser trabaja secuencial (max 2 subagentes coordinados, riesgo de pisar pestanas).
 ```
 
 ## Notas de uso
 
 - En este repo el archivo final `design_[dominio].md` de cada web va como nota normal en su carpeta temática, no junto a esta skill.
 - Sin MCP browser el nivel Simple falla en sitios 100% JS (dashboards, SPA con login). En ese caso recomienda reintentar en PC con MCP.
+- Paralelo opt-in solo por paginas (nunca por componentes) y solo en Completo/webfetch sin MCP browser; Simple y MCP van en secuencial.
 
 ## Ver también
 
