@@ -4,7 +4,8 @@
   "private": true,
   "description": "Repositorio personal de conocimientos en Markdown",
   "scripts": {
-    "check-links": "node tools/check-links.js --root ."
+    "check-links": "node tools/check-links.js --root .",
+    "check-sources": "node tools/check-sources.js --root ."
   },
   "engines": {
     "node": ">=18"
