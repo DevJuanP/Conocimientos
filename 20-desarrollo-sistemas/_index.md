@@ -19,6 +19,7 @@ Conocimiento duradero de software. Los apuntes del instituto están en [10-insti
 * [Análisis y requerimientos](analisis-y-requerimientos/_index.md)
 * [Archivos y almacenamiento](archivos-y-almacenamiento/_index.md)
 * [Plantillas de proyecto](plantillas-proyecto/_index.md)
+* [Metodología de cortes verticales](metodologia-cortes-verticales/_index.md)
 
 ## Ver también
 
