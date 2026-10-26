@@ -12,6 +12,7 @@ Conocimiento duradero de software. Los apuntes del instituto están en [10-insti
 * [Herramientas](herramientas/_index.md)
 * [Juegos 3D](juegos-3d/_index.md)
 * [Diseño web](diseno-web/_index.md)
+* [Redes](redes/_index.md)
 
 ## Temas transversales
 

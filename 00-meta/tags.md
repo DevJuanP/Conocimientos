@@ -3,7 +3,7 @@ title: Tags controlados
 area: meta
 tags: [meta]
 created: 2026-09-07
-updated: 2026-09-11
+updated: 2026-10-25
 related: ["./convenciones.md"]
 ---
 
@@ -29,6 +29,9 @@ Formato: `area` o `area/subtema`. En el frontmatter van sin `#`.
 ## electronica
 `electronica`, `electronica/fundamentos`, `electronica/componentes`,
 `electronica/circuitos`, `electronica/instrumentacion`, `electronica/proyectos`
+
+## redes
+`redes`, `redes/diagnostico`, `redes/windows`
 
 ## ciencias
 `ciencias`, `ciencias/evolucion`, `ciencias/biologia`, `ciencias/fisica`
