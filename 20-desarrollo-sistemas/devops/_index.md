@@ -9,6 +9,7 @@
 * [Comando `goto` - saltos rápidos entre rutas favoritas](comando-goto.md)
 * [Instalar lazygit en Windows (Git Bash, sin instalador)](instalar-lazygit-windows.md)
 * [Actualizar Node.js LTS en Windows con winget](actualizar-node-lts-windows-winget.md)
+* [Ubuntu en Termux - entrar y salir del contenedor](ubuntu-en-termux.md)
 * [Publicar skills de agente](publicar-skills.md)
 * [Licenciar skills de agente](licenciar-skills.md)
 
